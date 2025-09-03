@@ -1,0 +1,16 @@
+@import "tailwindcss";
+/* DaisyUI v5 can be plugged in from CSS in Tailwind v4 */
+@plugin "daisyui";
+
+/* App-wide helpers */
+html, body, #root { height: 100%; }
+
+/* Ensure our max content width feels like the 1440px canvas with a 1212px inner container */
+.container-figma {
+  max-width: 1212px;   /* matches your search bar width in the SVG */
+}
+
+/* App-wide tweaks */
+:root {
+--spacing-unit: 4px;
+}
